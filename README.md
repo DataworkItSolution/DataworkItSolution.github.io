@@ -2,7 +2,7 @@
 
 ## View the page at
 
-https://dataworkitsolution.github.io/#/
+https://dataworkitsolutions.github.io/#/
 
 ## Project setup
 
