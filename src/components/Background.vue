@@ -3,7 +3,7 @@
     <h1
       class="display-3 red--text font-weight-bold text--darken-5 text-uppercase pt-16"
     >
-      DataWorks
+      DataWork
     </h1>
     <h1 class="display-3 red--text text--darken-5 text-uppercase pt-5">
       IT Solutions
