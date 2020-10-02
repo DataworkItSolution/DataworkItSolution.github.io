@@ -1,6 +1,7 @@
 <template>
   <div id="service">
-    <h1>Unser Service</h1>
+    <h1 class="animate__animated animate__fadeIn">Unser Service</h1>
+
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sint in,
       rerum aliquid modi autem id nostrum excepturi natus ipsam. Lorem ipsum

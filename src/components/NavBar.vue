@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app dark>
-    <v-app-bar-nav-icon> </v-app-bar-nav-icon>
+    <!-- <v-app-bar-nav-icon> </v-app-bar-nav-icon> -->
 
     <div @click="$vuetify.goTo('#landing')">
       <span class="font-weight-bold">Data</span>

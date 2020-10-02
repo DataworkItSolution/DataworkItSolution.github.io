@@ -1,28 +1,45 @@
 <template>
   <div id="landing">
-    <h1
+    <!-- <h1
       class="display-3 red--text font-weight-bold text--darken-5 text-uppercase pt-16"
     >
       DataWork
     </h1>
     <h1 class="display-3 red--text text--darken-5 text-uppercase pt-5">
       IT Solutions
-    </h1>
-    <hr class="red" />
-    <p class="lime--text font-weight-bold pt-10">
-      Durch Begeisterung an Technik und Vertrauen in die Medien, <br />
-      verändern wir die Industrie mit digitalen Softwarelösungen!
-    </p>
-    <v-btn
-      @click="$vuetify.goTo('#team')"
-      outlined
-      fab
-      text
-      border
-      x-large
-      class="blue--text my-5"
-      ><v-icon> mdi-chevron-double-down </v-icon></v-btn
-    >
+    </h1> 
+    
+    
+    
+    -->
+    <v-row class="">
+      <v-col align="center">
+        <v-img
+          height="300px"
+          width="500px"
+          src="../assets/Logo_grau_2.png"
+        ></v-img>
+        <p class="grey--text text--darken-4 pt-5">
+          <span> Durch </span>
+          <span class="font-weight-bold"> Begeisterung </span>
+          <span>
+            an Technik und Vertrauen in die Medien, <br />
+            verändern wir die Industrie mit digitalen
+          </span>
+          <span class="font-weight-bold"> Softwarelösungen! </span>
+        </p>
+
+        <v-btn
+          @click="$vuetify.goTo('#team')"
+          outlined
+          fab
+          text
+          border
+          class="blue--text"
+          ><v-icon x-large> mdi-chevron-double-down </v-icon></v-btn
+        >
+      </v-col>
+    </v-row>
   </div>
 </template>
 
@@ -36,22 +53,11 @@ div {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
   width: 100vw;
   height: 100vh;
 }
 
 p {
-  font-size: 30px;
-}
-
-hr {
-  width: 15%;
-  height: 4px;
-  text-align: center;
-  margin: 2% auto 3% auto;
-  border: none;
+  font-size: 25px;
 }
 </style>
