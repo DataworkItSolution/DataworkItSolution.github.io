@@ -32,7 +32,7 @@ export default {};
 
 <style scoped>
 div {
-  background-image: url("../assets/hintergrund1.jpg");
+  background-image: url("../assets/versuch1.jpg");
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
