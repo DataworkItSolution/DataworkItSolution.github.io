@@ -1,12 +1,10 @@
 <template>
-  <div id="team">
-    <h1
-      class="display-2 red--text font-weight-bold text--darken-5 text-uppercase pt-15"
-    >
+  <div id="team" class="grey lighten-4">
+    <h1 class="display-2 blue--text font-weight-bold text-uppercase pt-15">
       Gründer und Team
     </h1>
 
-    <v-layout row wrap class="blue lighten-4 pb-16">
+    <v-layout row wrap class="pb-16">
       <v-flex
         class="px-2"
         xs12
@@ -24,25 +22,13 @@
           max-height="700px"
           elevation="10"
         >
-          <!-- <v-img
-            height="200px"
-            class="white--text align-end"
-            :src="leader.bild"
-          >
-          
-            <v-card-title>{{ leader.name }}</v-card-title>
-          </v-img> -->
-          <!-- :src="leader.bild" -->
           <v-card-title>
             {{ leader.name }}
           </v-card-title>
-          
+
           <v-row class="px-14">
             <v-avatar size="200">
-              <img                
-                class="white--text align-end"
-                v-bind:src="leader.bild">
-              </img>
+              <v-img class="white--text align-end" :src="leader.bild"> </v-img>
             </v-avatar>
           </v-row>
           <v-card-subtitle class="pb-2">{{ leader.skill }}</v-card-subtitle>
@@ -66,44 +52,43 @@
 
 <script>
 export default {
-  data() {
-    return {
-      leaders: [
-        {
-          name: "Thomas Sindlinger",
-          skill: "Website und Frontend",
-          description:
-            " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quos sed cumque magni natus animi perspiciatis necessitatibus veniam reiciendis placeat, odit molestias reprehenderit exercitationem facere! Fugiat corporis veritatis labore? Alias!",
-          bild: "https://cdn.vuetifyjs.com/images/cards/store.jpg",
-          linkedin: "https://www.linkedin.com/in/thomas-sindlinger-38b0721b8",
-        },
-        {
-          name: "Michael Sindlinger",
-          skill: "Patentrechte und AGBs",
-          description:
-            " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quos sed cumque magni natus animi perspiciatis necessitatibus veniam reiciendis placeat, odit molestias reprehenderit exercitationem facere! Fugiat corporis veritatis labore? Alias!",
-          bild: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
-          linkedin: "https://www2.hs-esslingen.de/~thsimb00/",
-        },
-        {
-          name: "Marius Walz",
-          skill: "Canvas und Business-Plan",
-          description:
-            " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quos sed cumque magni natus animi perspiciatis necessitatibus veniam reiciendis placeat, odit molestias reprehenderit exercitationem facere! Fugiat corporis veritatis labore? Alias!",
-          bild: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
-          linkedin: "https://www2.hs-esslingen.de/~thsimb00/",
-        },
-        {
-          name: "Dominik Ratzel",
-          skill: "Backend und Frontend",
-          description:
-            " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quos sed cumque magni natus animi perspiciatis necessitatibus veniam reiciendis placeat, odit molestias reprehenderit exercitationem facere! Fugiat corporis veritatis labore? Alias!",
-          bild: "../../assets/hintergrund1.jpg",
-          linkedin: "https://www2.hs-esslingen.de/~thsimb00/",
-        },
-      ],
-    };
-  },
+  data: () => ({
+    leaders: [
+      {
+        name: "Thomas Sindlinger",
+        skill: "Website und Frontend",
+        description:
+          " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quos sed cumque magni natus animi perspiciatis necessitatibus veniam reiciendis placeat, odit molestias reprehenderit exercitationem facere! Fugiat corporis veritatis labore? Alias!",
+        bild: "https://cdn.vuetifyjs.com/images/cards/store.jpg",
+        linkedin: "https://www.linkedin.com/in/thomas-sindlinger-38b0721b8",
+      },
+      {
+        name: "Michael Sindlinger",
+        skill: "Patentrechte und AGBs",
+        description:
+          " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quos sed cumque magni natus animi perspiciatis necessitatibus veniam reiciendis placeat, odit molestias reprehenderit exercitationem facere! Fugiat corporis veritatis labore? Alias!",
+        bild: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+        linkedin: "https://www2.hs-esslingen.de/~thsimb00/",
+      },
+      {
+        name: "Marius Walz",
+        skill: "Canvas und Business-Plan",
+        description:
+          " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quos sed cumque magni natus animi perspiciatis necessitatibus veniam reiciendis placeat, odit molestias reprehenderit exercitationem facere! Fugiat corporis veritatis labore? Alias!",
+        bild: "https://cdn.vuetifyjs.com/images/cards/docks.jpg",
+        linkedin: "https://www2.hs-esslingen.de/~thsimb00/",
+      },
+      {
+        name: "Dominik Ratzel",
+        skill: "Backend und Frontend",
+        description:
+          " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quos sed cumque magni natus animi perspiciatis necessitatibus veniam reiciendis placeat, odit molestias reprehenderit exercitationem facere! Fugiat corporis veritatis labore? Alias!",
+        bild: "../assets/hintergrund1.jpg",
+        linkedin: "https://www2.hs-esslingen.de/~thsimb00/",
+      },
+    ],
+  }),
+
   methods: {
     linkedIn: function () {
       {
@@ -118,6 +103,5 @@ export default {
 h1 {
   text-align: center;
   height: 30vh;
-  background-image: linear-gradient(rgb(22, 35, 95), rgb(187, 222, 251));
 }
 </style>

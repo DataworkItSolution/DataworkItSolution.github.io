@@ -26,5 +26,6 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap");
 </style>

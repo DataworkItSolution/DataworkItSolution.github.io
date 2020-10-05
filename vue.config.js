@@ -1,6 +1,4 @@
 module.exports = {
-  "transpileDependencies": [
-    "vuetify"
-  ],
+  transpileDependencies: ["vuetify"],
   // publicPath:'/ratzel921.github.io/NetSolutionsWebseite/'
-}
+};

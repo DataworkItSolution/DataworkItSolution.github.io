@@ -1,18 +1,29 @@
 <template>
-  <div id="product" class="align-center green--text">
-    <h1>WebTrack</h1>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe sint in,
-      rerum aliquid modi autem id nostrum excepturi natus ipsam. Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Esse error corporis
-      exercitationem aut placeat officia est, animi consequatur sit incidunt
-      culpa eius fugiat et harum provident sunt in sed fuga. Lorem ipsum dolor
-      sit amet consectetur adipisicing elit. Quos officia illum deleniti! Iste
-      totam aut laudantium doloribus odit nostrum, vitae excepturi corporis
-      consequatur quasi id. Vero qui impedit eaque placeat. Lorem ipsum dolor
-      sit amet consectetur, adipisicing elit. Enim recusandae aperiam placeat
-      facere porro officia. Quaerat, iste tenetur molestias, nam nemo maiores
-      dolorum odio, qui praesentium recusandae nisi consequuntur at.
+  <div id="product" class="grey lighten-4 blue--text">
+    <h1 class="pt-16">WebTrack</h1>
+    <p class="pt-16">
+      <span>
+        Kommunikation ist ein häufiger Gegner von fehlerfreien Prozessketten.
+        Deshalb schaffen wir Kundenbindung durch Klarheit und Durchsicht. <br />
+      </span>
+      <span>
+        Wir bieten ein Werkzeug, welches die Kommunikation auf eine neue Ebene
+        bringt.<br
+      /></span>
+      <span>Dieses Werkzeug nennt sich</span>
+      <span class="font-weight-bold"> WebTrack <br /></span>
+      <span
+        >WebTrack bietet Ihnen die Möglichkeit, Ihren Kunden, den Status einer
+        Bestellung in Echtzeit wiederzugeben.<br />
+      </span>
+      <span
+        >Durch Intuitive Bedienung einer Benutzeroberfläche kann WebTrack
+        einfach und schnell in den Bestellvorgang integriert werden.<br
+      /></span>
+      <span
+        >Sie sind genauso begeistert wie wir, dann erfahren Sie hier mehr
+        davon.</span
+      >
     </p>
   </div>
 </template>
@@ -22,7 +33,6 @@ export default {};
 </script>
 
 <style scoped>
-p,
 h1 {
   text-align: center;
 }
@@ -30,8 +40,8 @@ p {
   font-size: 20px;
 }
 div {
-  background-image: linear-gradient(rgb(187, 222, 251), rgb(37, 150, 255));
   width: 100vw;
   height: 100vh;
+  font-family: "Raleway", sans-serif;
 }
 </style>

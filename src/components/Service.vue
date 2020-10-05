@@ -1,5 +1,5 @@
 <template>
-  <div id="service">
+  <div id="service " class="grey lighten-4 blue--text">
     <h1 class="animate__animated animate__fadeIn">Unser Service</h1>
 
     <p>
@@ -28,11 +28,6 @@ p {
 }
 
 div {
-  background-image: linear-gradient(
-    rgb(37, 150, 255),
-    rgb(0, 68, 255),
-    rgb(0, 0, 0)
-  );
   width: 100vw;
   height: 80vh;
 }
