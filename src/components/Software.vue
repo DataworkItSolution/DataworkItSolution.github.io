@@ -1,30 +1,43 @@
 <template>
-  <div id="product" class="grey lighten-4 blue--text">
+  <div id="product" class="grey lighten-3 blue--text">
     <h1 class="pt-16">WebTrack</h1>
-    <p class="pt-16">
-      <span>
-        Kommunikation ist ein häufiger Gegner von fehlerfreien Prozessketten.
-        Deshalb schaffen wir Kundenbindung durch Klarheit und Durchsicht. <br />
-      </span>
-      <span>
-        Wir bieten ein Werkzeug, welches die Kommunikation auf eine neue Ebene
-        bringt.<br
-      /></span>
-      <span>Dieses Werkzeug nennt sich</span>
-      <span class="font-weight-bold"> WebTrack <br /></span>
-      <span
-        >WebTrack bietet Ihnen die Möglichkeit, Ihren Kunden, den Status einer
-        Bestellung in Echtzeit wiederzugeben.<br />
-      </span>
-      <span
-        >Durch Intuitive Bedienung einer Benutzeroberfläche kann WebTrack
-        einfach und schnell in den Bestellvorgang integriert werden.<br
-      /></span>
-      <span
-        >Sie sind genauso begeistert wie wir, dann erfahren Sie hier mehr
-        davon.</span
-      >
-    </p>
+    <v-layout row wrap>
+      <v-flex md1> </v-flex>
+      <v-flex md8 class="">
+        <p class="pt-5">
+          <span>
+            Kommunikation ist ein häufiger Gegner von fehlerfreien
+            Prozessketten. <br />Deshalb schaffen wir Kundenbindung durch
+            Klarheit und Durchsicht. <br />
+          </span>
+          <span>
+            Wir bieten ein Werkzeug, welches die Kommunikation auf eine neue
+            Ebene bringt.<br /><br />
+          </span>
+          <span>Dieses Werkzeug nennt sich</span>
+          <span class="font-weight-bold"> WebTrack <br /><br /></span>
+          <span
+            >WebTrack bietet Ihnen die Möglichkeit, Ihren Kunden, <br />
+            den Status einer Bestellung in Echtzeit wiederzugeben.<br />
+          </span>
+          <span
+            >Durch Intuitive Bedienung einer Benutzeroberfläche kann<br />
+            WebTrack einfach und schnell in den Bestellvorgang integriert
+            werden.<br
+          /></span>
+          <span
+            >Sie sind genauso begeistert wie wir, dann erfahren Sie hier mehr
+            davon.</span
+          >
+        </p>
+      </v-flex>
+      <v-flex md3>
+        <v-btn large elevation="4" dark class="blue">
+          <v-icon left small>mdi-omega</v-icon>
+          <span>WebTrack</span>
+        </v-btn>
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 

@@ -1,17 +1,9 @@
 <template>
   <div class="home">
-    <section id="landing">
-      <Background />
-    </section>
-    <section>
-      <Persons />
-    </section>
-    <section>
-      <Software />
-    </section>
-    <section>
-      <Service />
-    </section>
+    <Background />
+    <Persons />
+    <Software />
+    <Service />
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div id="service " class="grey lighten-4 blue--text">
+  <div id="service" class="grey lighten-4 blue--text">
     <h1 class="animate__animated animate__fadeIn">Unser Service</h1>
 
     <p>
