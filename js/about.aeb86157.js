@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["about"],{"761a":function(e,s,t){"use strict";t.r(s);var n=function(){var e=this,s=e.$createElement;e._self._c;return e._m(0)},a=[function(){var e=this,s=e.$createElement,t=e._self._c||s;return t("div",{staticClass:"impressum"},[t("h1",[e._v("This is an Impressum")])])}],r=t("2877"),u={},i=Object(r["a"])(u,n,a,!1,null,null,null);s["default"]=i.exports}}]);
-//# sourceMappingURL=about.aeb86157.js.map
