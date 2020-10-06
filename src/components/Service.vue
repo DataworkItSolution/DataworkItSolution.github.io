@@ -25,10 +25,6 @@
         laboriosam! Voluptates quaerat quia maiores alias.
       </span>
     </p>
-    <v-btn large elevation="4" dark class="blue">
-      <v-icon left small>mdi-omega</v-icon>
-      <span>WebTrack</span>
-    </v-btn>
   </div>
 </template>
 
