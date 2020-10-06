@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar app dark>
+  <v-app-bar v-if="this.$route.name == 'Home'" app dark>
     <!-- <v-app-bar-nav-icon> </v-app-bar-nav-icon> -->
 
     <div @click="$vuetify.goTo('#landing')">

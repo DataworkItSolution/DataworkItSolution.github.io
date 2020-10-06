@@ -8,8 +8,9 @@
         text
         rounded
         class="my-2 font-weight-light"
-        @click=""
-        >{{ link.name }}</v-btn
+        :to="link.route"
+      >
+        {{ link.name }}</v-btn
       >
       <v-col class="text-center" dark cols="12">
         {{ new Date().getFullYear() }} —
@@ -25,8 +26,8 @@ export default {
     links: [
       { name: "Home", route: "/" },
       { name: "Impressum", route: "/impressum" },
-      { name: "Datenschutz", route: "" },
-      { name: "AGB", route: "" },
+      { name: "Datenschutz", route: "/datenschutz" },
+      { name: "AGB", route: "/agb" },
     ],
   }),
 };

@@ -10,7 +10,7 @@
             dark
             max-width="300px"
             height="450px"
-            :elevation="hover ? 20 : 2"
+            :elevation="hover ? 2 : 20"
           >
             <v-card-title :class="{ 'blue--text': hover }">
               {{ leader.name }}
@@ -90,6 +90,11 @@ export default {
   computed: {
     getImg(path) {
       return require(path);
+    },
+  },
+  methods: {
+    test: function () {
+      console.log(this.$route.name);
     },
   },
 };

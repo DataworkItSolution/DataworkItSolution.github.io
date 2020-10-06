@@ -21,7 +21,7 @@
             den Status einer Bestellung in Echtzeit wiederzugeben.<br />
           </span>
           <span
-            >Durch Intuitive Bedienung einer Benutzeroberfläche kann<br />
+            >Durch intuitive Bedienung einer Benutzeroberfläche kann<br />
             WebTrack einfach und schnell in den Bestellvorgang integriert
             werden.<br
           /></span>
