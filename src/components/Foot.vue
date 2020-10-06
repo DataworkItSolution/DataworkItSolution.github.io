@@ -3,12 +3,13 @@
     <v-row justify="center" no-gutters>
       <v-btn
         v-for="link in links"
-        :key="link"
+        :key="link.name"
         color="white"
         text
         rounded
-        class="my-2"
-        >{{ link }}</v-btn
+        class="my-2 font-weight-light"
+        @click=""
+        >{{ link.name }}</v-btn
       >
       <v-col class="text-center" dark cols="12">
         {{ new Date().getFullYear() }} —
@@ -21,7 +22,12 @@
 <script>
 export default {
   data: () => ({
-    links: ["Home", "About Us", "Team", "Services", "Blog", "Contact Us"],
+    links: [
+      { name: "Home", route: "/" },
+      { name: "Impressum", route: "/impressum" },
+      { name: "Datenschutz", route: "" },
+      { name: "AGB", route: "" },
+    ],
   }),
 };
 </script>

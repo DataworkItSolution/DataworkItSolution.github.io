@@ -35,7 +35,7 @@
           fab
           text
           border
-          class="blue--text"
+          class="blue--text animate__animated animate__slideInDown animate__repeat-3"
           ><v-icon x-large> mdi-chevron-double-down </v-icon></v-btn
         >
       </v-col>
@@ -59,5 +59,10 @@ div {
 
 p {
   font-size: 25px;
+}
+
+.animate__animated.animate__slideInDown {
+  --animate-duration: 2s;
+  --animate-delay: 0.9s;
 }
 </style>

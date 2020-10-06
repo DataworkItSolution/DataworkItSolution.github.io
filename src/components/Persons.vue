@@ -1,20 +1,18 @@
 <template>
   <div id="team" class="grey lighten-4">
-    <h1 class="display-2 blue--text font-weight-bold text-uppercase pt-15">
-      Gründer und Team
-    </h1>
+    <h1 class="blue--text font-weight-bold pt-10">Gründer und Team</h1>
 
-    <v-row wrap class="pb-16" align="center" justify="center">
+    <v-row wrap class="pb-16 pt-5" align="center" justify="center">
       <v-col v-for="leader in leaders" :key="leader.name" cols="3">
-        <v-hover
+        <v-hover close-delay="200" v-slot:default="{ hover }"
           ><v-card
             class="pa-1 mx-auto"
             dark
             max-width="300px"
             height="450px"
-            elevation="10"
+            :elevation="hover ? 20 : 2"
           >
-            <v-card-title>
+            <v-card-title :class="{ 'blue--text': hover }">
               {{ leader.name }}
             </v-card-title>
 
@@ -27,8 +25,10 @@
                 </v-img>
               </v-avatar>
             </v-row>
-            <v-card-subtitle class="pb-2">{{ leader.skill }}</v-card-subtitle>
-            <v-card-text class="">
+            <v-card-subtitle class="pb-4" align="center">{{
+              leader.skill
+            }}</v-card-subtitle>
+            <v-card-text class="white--text">
               <p>{{ leader.description }}</p>
             </v-card-text>
 
@@ -98,6 +98,9 @@ export default {
 <style scoped>
 h1 {
   text-align: center;
-  height: 30vh;
+}
+
+div {
+  font-family: "Raleway", sans-serif;
 }
 </style>

@@ -32,7 +32,12 @@
         </p>
       </v-flex>
       <v-flex md3>
-        <v-btn large elevation="4" dark class="blue">
+        <v-btn
+          large
+          elevation="4"
+          dark
+          class="blue animate__animated animate__bounceIn animate__repeat-3"
+        >
           <v-icon left small>mdi-omega</v-icon>
           <span>WebTrack</span>
         </v-btn>
@@ -50,11 +55,16 @@ h1 {
   text-align: center;
 }
 p {
-  font-size: 20px;
+  font-size: 24px;
 }
 div {
   width: 100vw;
   height: 100vh;
   font-family: "Raleway", sans-serif;
+}
+
+.animate__animated.animate__bounceIn {
+  --animate-duration: 4s;
+  --animate-delay: 3s;
 }
 </style>
