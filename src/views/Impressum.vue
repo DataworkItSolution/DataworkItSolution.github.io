@@ -1,7 +1,9 @@
 <template>
   <div class="impressum">
     <h1>This is an Impressum</h1>
-    <v-btn small elevation="1" color="red" @click="route"> moin</v-btn>
+    <v-btn small elevation="1" color="red" @click="route">
+      <v-icon color="blue">mdi-heart</v-icon>
+    </v-btn>
   </div>
 </template>
 
