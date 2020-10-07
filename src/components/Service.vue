@@ -41,7 +41,7 @@ p {
 }
 div {
   width: 100vw;
-  height: 80vh;
+  height: 100vh;
   font-family: "Raleway", sans-serif;
 }
 </style>

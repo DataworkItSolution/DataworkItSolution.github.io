@@ -14,7 +14,8 @@
       >
       <v-col class="text-center" dark cols="12">
         {{ new Date().getFullYear() }} —
-        <strong>DataWorks</strong>
+        <strong>DataWorks </strong>
+        <v-icon small>mdi-copyright</v-icon>
       </v-col>
     </v-row>
   </v-footer>

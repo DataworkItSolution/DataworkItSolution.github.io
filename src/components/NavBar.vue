@@ -2,10 +2,10 @@
   <v-app-bar v-if="this.$route.name == 'Home'" app dark>
     <!-- <v-app-bar-nav-icon> </v-app-bar-nav-icon> -->
 
-    <div @click="$vuetify.goTo('#landing')">
+    <v-btn text @click="$vuetify.goTo('#landing')">
       <span class="font-weight-bold">Data</span>
       <span class="font-weight-light">Work</span>
-    </div>
+    </v-btn>
 
     <v-spacer></v-spacer>
 
@@ -23,8 +23,17 @@
       <v-icon left color="blue" small>mdi-offer</v-icon>
       <span class="grey--text text--lighten-1">Service</span>
     </v-btn>
-
     <Contact />
+  </v-app-bar>
+
+  <v-app-bar v-else app dark>
+    <v-spacer></v-spacer>
+    <v-btn text to="/">
+      <v-icon color="blue" large>mdi-home</v-icon>
+      <!-- <span right class="font-weight-bold">Data</span>
+      <span class="font-weight-light">Work</span> -->
+    </v-btn>
+    <v-spacer></v-spacer>
   </v-app-bar>
 </template>
 

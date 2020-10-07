@@ -56,7 +56,7 @@ export default {
         skill: "Website und Frontend",
         description:
           " Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        bild: "hintergrund1.jpg",
+        bild: "Profilbild/Profilbild_thomas.jpg",
         linkedin: "https://www.linkedin.com/in/thomas-sindlinger-38b0721b8",
       },
       {
@@ -80,7 +80,7 @@ export default {
         skill: "Backend und Frontend",
         description:
           " Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        bild: "hintergrund1.jpg",
+        bild: "Profilbild/Profilbild_dominik.jpeg",
         linkedin: "https://www.linkedin.com/in/dominik-ratzel-19652a1a3/",
       },
     ],
