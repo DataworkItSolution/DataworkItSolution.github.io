@@ -1,23 +1,11 @@
 <template>
   <div id="landing">
-    <!-- <h1
-      class="display-3 red--text font-weight-bold text--darken-5 text-uppercase pt-16"
-    >
-      DataWork
-    </h1>
-    <h1 class="display-3 red--text text--darken-5 text-uppercase pt-5">
-      IT Solutions
-    </h1> 
-    
-    
-    
-    -->
-    <v-row class="">
+    <v-row class="grey lighten-3">
       <v-col align="center">
         <v-img
           height="300px"
           width="500px"
-          src="../assets/Logo_grau_2.png"
+          src="../assets/Logo_muster_blau.png"
         ></v-img>
         <p class="grey--text text--darken-4 pt-5">
           <span> Durch </span>
@@ -49,7 +37,7 @@ export default {};
 
 <style scoped>
 div {
-  background-image: url("../assets/versuch1.jpg");
+  /* background-image: url("../assets/versuch1.jpg"); */
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;

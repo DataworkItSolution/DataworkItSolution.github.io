@@ -10,7 +10,7 @@
             dark
             max-width="300px"
             height="450px"
-            :elevation="hover ? 2 : 20"
+            :elevation="hover ? 20 : 2"
           >
             <v-card-title :class="{ 'blue--text': hover }">
               {{ leader.name }}
@@ -100,7 +100,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 h1 {
   text-align: center;
 }

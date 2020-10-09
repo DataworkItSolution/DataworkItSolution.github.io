@@ -4,7 +4,7 @@
     <template v-slot:activator="{ on, attrs }" justify->
       <v-btn text dark v-bind="attrs" v-on="on">
         <v-icon color="blue" small left> mdi-chat-plus </v-icon>
-        <span class="grey--text text--lighten-1">Kontakt</span>
+        <span class="grey--text text--lighten-1 ">Kontakt</span>
       </v-btn>
     </template>
 
