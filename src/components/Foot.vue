@@ -1,4 +1,5 @@
 <template>
+
   <v-footer dark color="black" padless>
     <v-row justify="center" no-gutters>
       <v-btn
@@ -12,6 +13,7 @@
       >
         {{ link.name }}</v-btn
       >
+
       <v-col class="text-center" dark cols="12">
         {{ new Date().getFullYear() }} —
         <strong>DataWorks </strong>
@@ -19,6 +21,7 @@
       </v-col>
     </v-row>
   </v-footer>
+
 </template>
 
 <script>

@@ -1,30 +1,79 @@
 <template>
-  <v-container id="service" class="grey lighten-4 blue--text">
-    <h1 class="pt-16">Service</h1>
-    <p class="pt-5">
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-        dolorem.<br />Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Doloribus tempora aliquam inventore sunt cumque doloremque, nostrum
-        reiciendis aspernatur neque harum laudantium nam temporibus perspiciatis
-        accusantium ex, blanditiis obcaecati eius voluptate?
-        <br />
-      </span>
-      <span>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem, quas?
-        Exercitationem autem iusto enim, doloremque quidem recusandae
-        consequatur nesciunt repellendus suscipit laboriosam? Optio cum ipsam
-        amet reiciendis aperiam consequuntur odit.<br /><br />
-      </span>
-      <span>Dieses Werkzeug nennt sich</span>
-      <span class="font-weight-bold"> Service <br /><br /></span>
-      <span
-        >Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        Necessitatibus doloribus mollitia a enim praesentium maiores consequatur
-        fugiat maxime, blanditiis laudantium veritatis voluptatem modi, quam
-        laboriosam! Voluptates quaerat quia maiores alias.
-      </span>
-    </p>
+  <v-container fluid id="product" class="blue--text">
+  
+  <h1 class="pt-16">WebService</h1>
+  
+  <v-row wrap align="center" no-gutters>
+    <!-- //Left Space (1/12) -->
+    <v-col cols="12"
+          xs="12"
+          sm="12"
+          md="1"
+          lg="1"
+          xl="1"
+          class="pa-1">
+          
+    </v-col>
+
+    <!-- //Content (9/12) -->
+    <v-col 
+    cols="12" 
+          xs="12"
+          sm="12"
+          md="9"
+          lg="9"
+          xl="9"
+          class="pa-1">
+          <p class="pt-5">
+          <span>
+            Kommunikation ist ein häufiger Gegner von fehlerfreien
+            Prozessketten. <br />Deshalb schaffen wir Kundenbindung durch
+            Klarheit und Durchsicht. <br />
+          </span>
+          <span>
+            Wir bieten ein Werkzeug, welches die Kommunikation auf eine neue
+            Ebene bringt.<br /><br />
+          </span>
+          <span>Dieses Werkzeug nennt sich</span>
+          <span class="font-weight-bold"> WebTrack <br /><br /></span>
+          <span
+            >WebTrack bietet Ihnen die Möglichkeit, Ihren Kunden, <br />
+            den Status einer Bestellung in Echtzeit wiederzugeben.<br />
+          </span>
+          <span
+            >Durch intuitive Bedienung einer Benutzeroberfläche kann<br />
+            WebTrack einfach und schnell in den Bestellvorgang integriert
+            werden.<br
+          /></span>
+          <span
+            >Sie sind genauso begeistert wie wir, dann erfahren Sie hier mehr
+            davon.</span
+          >
+        </p>
+          
+    </v-col>
+
+    <!-- //Button (2/12) -->
+    <v-col cols="12"
+          xs="12"
+          sm="12"
+          md="2"
+          lg="2"
+          xl="2"
+          class="pa-1"
+          align="start"
+          justify="center">
+        <v-btn
+          large
+          elevation="4"
+          dark
+          class="blue animate__animated animate__bounceIn animate__repeat-3">
+          <v-icon left small>mdi-omega</v-icon>
+          <span>WebTrack</span>
+        </v-btn>
+          
+    </v-col>
+  </v-row>
   </v-container>
 </template>
 
@@ -40,8 +89,7 @@ p {
   font-size: 20px;
 }
 div {
-  width: 100vw;
-  height: 100vh;
+ 
   font-family: "Raleway", sans-serif;
 }
 </style>

@@ -1,10 +1,29 @@
 <template>
-  <v-container id="product" class="grey lighten-3 blue--text">
-    <h1 class="pt-16">WebTrack</h1>
-    <v-layout row wrap>
-      <v-flex md1> </v-flex>
-      <v-flex md8 class="">
-        <p class="pt-5">
+  <v-container fluid id="product" class="grey lighten-3 blue--text">
+  
+        <h1 class="pt-16">WebTrack</h1>
+  
+  <v-row wrap align="center" no-gutters>
+    <!-- //Left Space (1/12) -->
+    <v-col 
+          xs="12"
+          sm="12"
+          md="1"
+          lg="1"
+          xl="1"
+          class="pa-1">
+          
+    </v-col>
+
+    <!-- //Content (9/12) -->
+    <v-col  cols="12"
+          xs="12"
+          sm="12"
+          md="9"
+          lg="9"
+          xl="9"
+          class="pa-1">
+          <p class="pt-5">
           <span>
             Kommunikation ist ein häufiger Gegner von fehlerfreien
             Prozessketten. <br />Deshalb schaffen wir Kundenbindung durch
@@ -30,19 +49,30 @@
             davon.</span
           >
         </p>
-      </v-flex>
-      <v-flex md3>
+          
+    </v-col>
+
+    <!-- //Button (2/12) -->
+    <v-col
+          xs="12"
+          sm="12"
+          md="2"
+          lg="2"
+          xl="2"
+          class="pa-1"
+          align="start"
+          justify="center">
         <v-btn
           large
           elevation="4"
           dark
-          class="blue animate__animated animate__bounceIn animate__repeat-3"
-        >
+          class="blue animate__animated animate__bounceIn animate__repeat-3">
           <v-icon left small>mdi-omega</v-icon>
           <span>WebTrack</span>
         </v-btn>
-      </v-flex>
-    </v-layout>
+          
+    </v-col>
+  </v-row>
   </v-container>
 </template>
 
@@ -58,8 +88,7 @@ p {
   font-size: 24px;
 }
 div {
-  width: 100vw;
-  height: 100vh;
+  
   font-family: "Raleway", sans-serif;
 }
 
