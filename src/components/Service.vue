@@ -1,5 +1,5 @@
 <template>
-  <div id="service" class="grey lighten-4 blue--text">
+  <v-container id="service" class="grey lighten-4 blue--text">
     <h1 class="pt-16">Service</h1>
     <p class="pt-5">
       <span>
@@ -25,7 +25,7 @@
         laboriosam! Voluptates quaerat quia maiores alias.
       </span>
     </p>
-  </div>
+  </v-container>
 </template>
 
 <script>

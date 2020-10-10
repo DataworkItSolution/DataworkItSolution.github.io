@@ -1,9 +1,13 @@
 <template>
-  <div id="team" class="grey lighten-4">
+  <v-container fluid id="team" class="grey lighten-4">
     <h1 class="blue--text font-weight-bold pt-10">Gründer und Team</h1>
 
-    <v-row wrap class="pb-16 pt-5" align="center" justify="center">
-      <v-col v-for="leader in leaders" :key="leader.name" cols="3">
+    <v-row wrap class="pb-16 pt-5" align="center" justify="center" no-gutters>
+      <v-col v-for="leader in leaders" :key="leader.name" cols="12"
+        xs="12"
+        sm="6"
+        md="3"
+        class="ma-1">
         <v-hover close-delay="200" v-slot:default="{ hover }"
           ><v-card
             class="pa-1 mx-auto"
@@ -44,7 +48,7 @@
         </v-hover>
       </v-col>
     </v-row>
-  </div>
+  </v-container>
 </template>
 
 <script>

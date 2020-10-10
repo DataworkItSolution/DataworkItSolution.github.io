@@ -39,7 +39,7 @@ export default {
         case 'xs': return 150
         case 'sm': return 300
         case 'md': return 300
-        case 'lg': return 600
+        case 'lg': return 300
         case 'xl': return 600
       }
     },
@@ -48,7 +48,7 @@ export default {
         case 'xs': return 250
         case 'sm': return 500
         case 'md': return 500
-        case 'lg': return 1000
+        case 'lg': return 500
         case 'xl': return 1000
       }
     }

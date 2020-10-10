@@ -1,5 +1,5 @@
 <template>
-  <div id="product" class="grey lighten-3 blue--text">
+  <v-container id="product" class="grey lighten-3 blue--text">
     <h1 class="pt-16">WebTrack</h1>
     <v-layout row wrap>
       <v-flex md1> </v-flex>
@@ -43,7 +43,7 @@
         </v-btn>
       </v-flex>
     </v-layout>
-  </div>
+  </v-container>
 </template>
 
 <script>

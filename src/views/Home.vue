@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Background />
+   <Background />
     <Persons />
     <Software />
     <Service />
