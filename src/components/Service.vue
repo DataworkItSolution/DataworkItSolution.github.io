@@ -2,6 +2,11 @@
   <v-container fluid id="product" class="blue--text">
   
   <h1 class="pt-16">WebService</h1>
+
+  <v-progress-linear
+      indeterminate
+      color="green"
+    ></v-progress-linear>
   
   <v-row wrap align="center" no-gutters>
     <!-- //Left Space (1/12) -->
@@ -26,28 +31,23 @@
           class="pa-1">
           <p class="pt-5">
           <span>
-            Kommunikation ist ein häufiger Gegner von fehlerfreien
-            Prozessketten. <br />Deshalb schaffen wir Kundenbindung durch
-            Klarheit und Durchsicht. <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi! <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ullam! <br />
           </span>
           <span>
-            Wir bieten ein Werkzeug, welches die Kommunikation auf eine neue
-            Ebene bringt.<br /><br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br /><br />
           </span>
-          <span>Dieses Werkzeug nennt sich</span>
-          <span class="font-weight-bold"> WebTrack <br /><br /></span>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!</span>
+          <span class="font-weight-bold"> WebService <br /><br /></span>
           <span
-            >WebTrack bietet Ihnen die Möglichkeit, Ihren Kunden, <br />
-            den Status einer Bestellung in Echtzeit wiederzugeben.<br />
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi! <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br />
           </span>
           <span
-            >Durch intuitive Bedienung einer Benutzeroberfläche kann<br />
-            WebTrack einfach und schnell in den Bestellvorgang integriert
-            werden.<br
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br />
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br
           /></span>
           <span
-            >Sie sind genauso begeistert wie wir, dann erfahren Sie hier mehr
-            davon.</span
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!</span
           >
         </p>
           
@@ -68,8 +68,8 @@
           elevation="4"
           dark
           class="blue animate__animated animate__bounceIn animate__repeat-3">
-          <v-icon left small>mdi-omega</v-icon>
-          <span>WebTrack</span>
+          <v-icon left small>mdi-information</v-icon>
+          <span>WebService</span>
         </v-btn>
           
     </v-col>
