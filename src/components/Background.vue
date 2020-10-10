@@ -3,8 +3,8 @@
     <v-row class="grey lighten-3">
       <v-col align="center">
         <v-img
-          height="300px"
-          width="500px"
+          :height="logoHeigth"
+          :width="logoWidth"
           src="../assets/Logo_muster_blau.png"
         ></v-img>
         <p class="grey--text text--darken-4 pt-5">
@@ -32,7 +32,30 @@
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+     logoHeigth () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 150
+        case 'sm': return 300
+        case 'md': return 300
+        case 'lg': return 600
+        case 'xl': return 600
+      }
+    },
+    logoWidth () {
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xs': return 250
+        case 'sm': return 500
+        case 'md': return 500
+        case 'lg': return 1000
+        case 'xl': return 1000
+      }
+    }
+  }
+
+
+};
 </script>
 
 <style scoped>

@@ -17,7 +17,7 @@
           @click="sectionScroll(item.section)"
         >
           <v-icon small left color="blue">{{ item.icon }}</v-icon>
-          <v-list-item-title class ="grey--text text--lighten-1 text-uppercase"> {{ item.title }}</v-list-item-title>
+          <v-list-item-title class ="grey--text text--lighten-1 text-uppercase"> <span>{{ item.title }} </span>  </v-list-item-title>
           
         </v-list-item>
         <Contact />
@@ -66,4 +66,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+span{
+  font-family: "Raleway", sans-serif;
+}
+</style>
