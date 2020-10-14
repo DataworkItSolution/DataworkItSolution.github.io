@@ -5,11 +5,14 @@ import store from "./store";
 import vuetify from "./plugins/vuetify";
 
 import AnimateCSS from "animate.css";
+Vue.use(AnimateCSS);
 
 import { ValidationProvider } from 'vee-validate/dist/vee-validate.full.esm';
 Vue.component('ValidationProvider', ValidationProvider);
 
-Vue.use(AnimateCSS);
+import { ValidationObserver } from 'vee-validate';
+Vue.component('ValidationObserver', ValidationObserver);
+
 Vue.config.productionTip = false;
 
 new Vue({

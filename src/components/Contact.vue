@@ -15,7 +15,7 @@
     </template> -->
 
     <!--Kontent-->
-    <ValidationObserver  >
+    <ValidationObserver v-slot="{ invalid }">
         <form @submit.prevent="onSubmit">
     <v-card>
           <v-row justify="center">
