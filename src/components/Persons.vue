@@ -70,7 +70,7 @@ export default {
         skill: "Patentrechte und AGBs",
         job: "Master Student, Technologie Management",
         company: "Universität Stuttgart",
-        bild: "hintergrund1.jpg",
+        bild: "Logo_muster_blau.png",
         linkedin: "https://www.linkedin.com/in/michael-sindlinger-3a33a51b9/",
       },
       {

@@ -5,7 +5,7 @@
         <span class="grey--text text--lighten-1 ">Kontakt</span>
       </v-btn>
 
-  <v-dialog v-model="dialog" max-width="800px">
+  <v-dialog v-model="dialog" max-width="800px" >
     <!--Knopf-->
     <!-- <template v-slot:activator="{ on, attrs }" >
       <v-btn text dark v-bind="attrs" v-on="on">
