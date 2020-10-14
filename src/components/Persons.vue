@@ -14,7 +14,7 @@
               class="pa-1 mx-auto"
               dark
               width="300px"
-              height="450px"
+              height="500px"
               :elevation="hover ? 20 : 2"
               align="center" justify="center"
             >
@@ -34,10 +34,11 @@
               </v-card-subtitle>
 
               <v-card-text align="left" justify="left" class="white--text">
-                <p>{{ leader.description }}</p>
+                <p>{{ leader.job }}<br>{{leader.company}}</p>
               </v-card-text>
+              <v-spacer></v-spacer>
 
-              <v-card-actions>
+              <v-card-actions class="py-auto">
                 <v-spacer></v-spacer>
                 <v-btn text color="blue" :href="leader.linkedin" target="_blank">
                   <v-icon left color="">mdi-linkedin</v-icon>
@@ -59,32 +60,32 @@ export default {
       {
         name: "Thomas Sindlinger",
         skill: "Website und Frontend",
-        description:
-          " Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        job:"Bachelor Student, Maschinenbau",
+        company:"Hochschule Esslingen - University of Applied Sciences",
         bild: "Profilbild/Profilbild_thomas.jpg",
         linkedin: "https://www.linkedin.com/in/thomas-sindlinger-38b0721b8",
       },
       {
         name: "Michael Sindlinger",
         skill: "Patentrechte und AGBs",
-        description:
-          " Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        job: "Master Student, Technologie Management",
+        company: "Universität Stuttgart",
         bild: "hintergrund1.jpg",
-        linkedin: "https://www2.hs-esslingen.de/~thsimb00/",
+        linkedin: "https://www.linkedin.com/in/michael-sindlinger-3a33a51b9/",
       },
       {
         name: "Marius Walz",
         skill: "Canvas und Business-Plan",
-        description:
-          " Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-        bild: "hintergrund1.jpg",
-        linkedin: "https://www2.hs-esslingen.de/~thsimb00/",
+        job:"Master Student, Mechanical Engineering",
+        company:"Konstanz - Hochschule für Technik, Wirtschaft und Gestaltung",
+        bild: "Profilbild/Profilbild_marius.jpg",
+        linkedin: "https://www.linkedin.com/in/marius-walz-5980801b4/",
       },
       {
         name: "Dominik Ratzel",
         skill: "Backend und Frontend",
-        description:
-          " Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+        job: "Bachelor Student, Medieninformatik",
+        company: "Hochschule der Medien - Stuttgart",
         bild: "Profilbild/Profilbild_dominik.jpeg",
         linkedin: "https://www.linkedin.com/in/dominik-ratzel-19652a1a3/",
       },

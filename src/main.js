@@ -6,6 +6,9 @@ import vuetify from "./plugins/vuetify";
 
 import AnimateCSS from "animate.css";
 
+import { ValidationProvider } from 'vee-validate/dist/vee-validate.full.esm';
+Vue.component('ValidationProvider', ValidationProvider);
+
 Vue.use(AnimateCSS);
 Vue.config.productionTip = false;
 

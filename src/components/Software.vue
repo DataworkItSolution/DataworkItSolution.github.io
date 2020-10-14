@@ -3,12 +3,6 @@
   
         <h1 class="pt-16">WebTrack</h1>
 
-        <v-progress-linear
-      buffer-value="60"
-      value="40"
-      stream
-      color="orange"
-    ></v-progress-linear>
   
   <v-row wrap align="center" no-gutters>
     <!-- //Left Space (1/12) -->

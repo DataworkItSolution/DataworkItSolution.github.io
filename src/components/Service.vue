@@ -1,12 +1,7 @@
 <template>
-  <v-container fluid id="product" class="blue--text">
+  <v-container fluid id="service" class="blue--text">
   
   <h1 class="pt-16">WebService</h1>
-
-  <v-progress-linear
-      indeterminate
-      color="green"
-    ></v-progress-linear>
   
   <v-row wrap align="center" no-gutters>
     <!-- //Left Space (1/12) -->

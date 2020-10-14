@@ -1,78 +1,149 @@
 <template>
+  <div>
+    <v-btn text @click="dialog =!dialog">
+        <v-icon color="blue" small left> mdi-chat-plus </v-icon>
+        <span class="grey--text text--lighten-1 ">Kontakt</span>
+      </v-btn>
+
   <v-dialog v-model="dialog" max-width="800px">
     <!--Knopf-->
-    <template v-slot:activator="{ on, attrs }" justify->
+    <!-- <template v-slot:activator="{ on, attrs }" >
       <v-btn text dark v-bind="attrs" v-on="on">
         <v-icon color="blue" small left> mdi-chat-plus </v-icon>
         <span class="grey--text text--lighten-1 ">Kontakt</span>
       </v-btn>
-    </template>
+    </template> -->
 
     <!--Kontent-->
-
+    <ValidationObserver  >
+        <form @submit.prevent="onSubmit">
     <v-card>
-      <v-row justify="center">
-        <v-card-title>
-          <h1 class="headline blue--text text-uppercase">Contact us!</h1>
-        </v-card-title>
-      </v-row>
-      <v-card-text>
-        <v-container>
-          <v-row>
-            <v-col cols="12">
-              <v-autocomplete
-                :items="[
-                  'Service',
-                  'Produkt',
-                  'Kontakt',
-                  'Information',
-                  'Support',
-                  'Anregungen',
-                  'Feedback',
-                ]"
-                label="Betreff"
-              ></v-autocomplete>
-            </v-col>
-
-            <v-col cols="12" sm="6" md="6">
-              <v-text-field label="First name*" required></v-text-field>
-            </v-col>
-
-            <v-col cols="12" sm="6" md="6">
-              <v-text-field
-                label="Last name*"
-                hint="Bitte ausfüllen"
-                required
-              ></v-text-field>
-            </v-col>
-
-            <v-col cols="12">
-              <v-text-field label="Email*" required></v-text-field>
-            </v-col>
-
-            <v-col cols="12">
-              <v-textarea label="Nachricht"> </v-textarea>
-            </v-col>
+          <v-row justify="center">
+            <v-card-title>
+              <h1 class="headline blue--text text-uppercase">Contact us!</h1>
+            </v-card-title>
           </v-row>
-        </v-container>
-        <small>*indicates required field</small>
-      </v-card-text>
-      <v-card-actions>
-        <v-spacer></v-spacer>
-        <v-btn color="blue darken-1" text @click="dialog = false">
-          Close
-        </v-btn>
-        <v-btn color="blue darken-1" text @click="dialog = false"> Save </v-btn>
-      </v-card-actions>
-    </v-card>
+
+          <v-card-text class="pt-0">
+            <v-container >
+              <v-row>
+                <v-col cols="12">
+                  <ValidationProvider 
+                  name="Subject" 
+                  rules="required|alpha|max:20" 
+                  v-slot="{ errors }">
+                  <v-autocomplete
+                    :items="[
+                      'Service',
+                      'Produkt',
+                      'Kontakt',
+                      'Information',
+                      'Support',
+                      'Anregungen',
+                      'Feedback',
+                    ]"
+                    label="Betreff"
+                    clearable 
+                    :error-messages="errors[0]"
+                    v-model="form.subject"
+                  ></v-autocomplete>
+                  </ValidationProvider>
+                </v-col>
+
+                <v-col cols="12" sm="6" md="6">
+                  <ValidationProvider 
+                  name="Vorname" 
+                  rules="required|alpha|min:3|max:20" 
+                  v-slot="{ errors }">
+                    <v-text-field 
+                    label="Vorname*" 
+                    v-model="form.firstname" 
+                    required counter="20" 
+                    clearable solor 
+                    :error-messages="errors[0]">
+                    </v-text-field>
+                  </ValidationProvider>
+                </v-col>
+
+                <v-col cols="12" sm="6" md="6">
+                  <ValidationProvider 
+                  name="Nachname" 
+                  rules="required|alpha|min:4|max:20" 
+                  v-slot="{ errors }">
+                    <v-text-field
+                    label="Nachname*"
+                    v-model="form.lastname"
+                    counter="20" clearable :error-messages="errors[0]"
+                    required
+                    > 
+                    </v-text-field>
+                  </ValidationProvider>
+                </v-col>
+
+                <v-col cols="12">
+                  <ValidationProvider 
+                  name="Message" 
+                  rules="required|min:5" 
+                  v-slot="{ errors }">
+                    <v-textarea 
+                    label="Message*"
+                    v-model="form.message"
+                    required
+                    dense
+                    :error-messages="errors[0]"
+                    solo> 
+                    </v-textarea>
+                  </ValidationProvider>
+                </v-col>
+
+              </v-row>
+            </v-container>
+            <small>*kennzeichnet erforderliche Felder</small>
+          </v-card-text>
+
+          <v-card-actions>
+            <v-spacer></v-spacer>
+
+            <v-btn 
+            color="blue darken-1" 
+            text 
+            @click="dialog = false">
+              Close
+            </v-btn>
+          <v-spacer></v-spacer>
+            <v-btn 
+            :disabled="invalid" 
+            dark
+            class="blue darken" 
+            @click="dialog = false" 
+            @submit.prevent="onSubmit"> Save </v-btn>
+            <v-spacer></v-spacer>
+          </v-card-actions>
+        </v-card>
+         </form>
+      </ValidationObserver>
   </v-dialog>
-</template>
+</div>
+  </template>
+
 
 <script>
 export default {
   data: () => ({
     dialog: false,
+    form: {
+        firstname: '',
+        lastname: '',
+        subject: '',
+        message: '',
+    }
   }),
+  methods: {
+    onSubmit () {
+      alert('Form has been submitted!');
+    }
+  },
+
 };
 </script>
 
