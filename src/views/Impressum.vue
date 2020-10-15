@@ -1,9 +1,9 @@
 <template>
-  <div class="impressum">
-    <h1>This is an Impressum</h1>
-    <v-btn small elevation="1" color="red" @click="route">
+  <div class="impressum animate__animated animate__fadeIn">
+    <h1>This is an imprint</h1>
+    <!-- <v-btn small elevation="1" color="red" @click="route">
       <v-icon color="blue">mdi-heart</v-icon>
-    </v-btn>
+    </v-btn> -->
   </div>
 </template>
 

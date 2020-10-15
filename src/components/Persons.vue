@@ -14,9 +14,9 @@
               class="pa-1 mx-auto"
               dark
               width="300px"
-              height="500px"
+              height="450px"
               :elevation="hover ? 20 : 2"
-              align="center" justify="center"
+              align="center"
             >
               <v-card-title :class="{ 'blue--text': hover }">
                 {{ leader.name }}
@@ -33,12 +33,13 @@
                 {{leader.skill }}
               </v-card-subtitle>
 
-              <v-card-text align="left" justify="left" class="white--text">
-                <p>{{ leader.job }}<br>{{leader.company}}</p>
+              <v-card-text align="center" class="white--text">
+                <p>{{ leader.title }}<br>{{leader.job}}</p>
               </v-card-text>
-              <v-spacer></v-spacer>
 
-              <v-card-actions class="py-auto">
+              <v-divider></v-divider>
+
+              <v-card-actions class="">
                 <v-spacer></v-spacer>
                 <v-btn text color="blue" :href="leader.linkedin" target="_blank">
                   <v-icon left color="">mdi-linkedin</v-icon>
@@ -60,7 +61,8 @@ export default {
       {
         name: "Thomas Sindlinger",
         skill: "Website und Frontend",
-        job:"Bachelor Student, Maschinenbau",
+        title: "Bachelor Student",
+        job:"Maschinenbau",
         company:"Hochschule Esslingen - University of Applied Sciences",
         bild: "Profilbild/Profilbild_thomas.jpg",
         linkedin: "https://www.linkedin.com/in/thomas-sindlinger-38b0721b8",
@@ -68,7 +70,8 @@ export default {
       {
         name: "Michael Sindlinger",
         skill: "Patentrechte und AGBs",
-        job: "Master Student, Technologie Management",
+        title: "Master Student",
+        job: "Technologie Management",
         company: "Universität Stuttgart",
         bild: "Logo_muster_blau.png",
         linkedin: "https://www.linkedin.com/in/michael-sindlinger-3a33a51b9/",
@@ -76,7 +79,8 @@ export default {
       {
         name: "Marius Walz",
         skill: "Canvas und Business-Plan",
-        job:"Master Student, Mechanical Engineering",
+        title: "Master Student",
+        job:"Mechanical Engineering",
         company:"Konstanz - Hochschule für Technik, Wirtschaft und Gestaltung",
         bild: "Profilbild/Profilbild_marius.jpg",
         linkedin: "https://www.linkedin.com/in/marius-walz-5980801b4/",
@@ -84,12 +88,14 @@ export default {
       {
         name: "Dominik Ratzel",
         skill: "Backend und Frontend",
-        job: "Bachelor Student, Medieninformatik",
+        title: "Bachelor Student",
+        job: "Medieninformatik",
         company: "Hochschule der Medien - Stuttgart",
         bild: "Profilbild/Profilbild_dominik.jpeg",
         linkedin: "https://www.linkedin.com/in/dominik-ratzel-19652a1a3/",
       },
     ],
+    show: false,
   }),
 
   methods: {},

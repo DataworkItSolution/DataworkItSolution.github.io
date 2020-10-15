@@ -1,5 +1,5 @@
 <template>
-  <div id="landing">
+  <container fluid id="landing">
     <v-row class="grey lighten-3">
       <v-col align="center">
         <v-img
@@ -23,12 +23,12 @@
           fab
           text
           border
-          class="blue--text animate__animated animate__slideInDown animate__repeat-3"
+          class="blue--text animate__animated animate__bounce animate__repeat-3"
           ><v-icon x-large> mdi-chevron-double-down </v-icon></v-btn
         >
       </v-col>
     </v-row>
-  </div>
+  </container>
 </template>
 
 <script>
@@ -72,7 +72,7 @@ p {
   font-size: 25px;
 }
 
-.animate__animated.animate__slideInDown {
+.animate__animated.animate__bounce {
   --animate-duration: 2s;
   --animate-delay: 0.9s;
 }

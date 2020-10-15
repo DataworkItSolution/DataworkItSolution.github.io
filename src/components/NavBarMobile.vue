@@ -1,8 +1,5 @@
 <template>
   <v-app-bar v-if="this.$route.name == 'Home'" app dark>
-
-    <v-spacer></v-spacer>
-
     <v-menu offset-y
     transition="scale-transition">
       <template v-slot:activator="{ on, attrs }">
@@ -22,8 +19,9 @@
         </v-list-item>
         <Contact />
       </v-list>
-      
     </v-menu>
+
+    <v-spacer></v-spacer>
 
     <v-btn text @click="$vuetify.goTo('#landing')">
       <span class="font-weight-bold">Data</span>

@@ -1,23 +1,17 @@
 <template>
-  <div>
-    <v-btn text @click="dialog =!dialog">
-        <v-icon color="blue" small left> mdi-chat-plus </v-icon>
-        <span class="grey--text text--lighten-1 ">Kontakt</span>
-      </v-btn>
-
   <v-dialog v-model="dialog" max-width="800px" >
     <!--Knopf-->
-    <!-- <template v-slot:activator="{ on, attrs }" >
+    <template v-slot:activator="{ on, attrs }" >
       <v-btn text dark v-bind="attrs" v-on="on">
         <v-icon color="blue" small left> mdi-chat-plus </v-icon>
         <span class="grey--text text--lighten-1 ">Kontakt</span>
       </v-btn>
-    </template> -->
+    </template>
 
     <!--Kontent-->
     <ValidationObserver v-slot="{ invalid }">
-        <form @submit.prevent="onSubmit">
-    <v-card>
+      <form @submit.prevent="onSubmit">
+        <v-card>
           <v-row justify="center">
             <v-card-title>
               <h1 class="headline blue--text text-uppercase">Contact us!</h1>
@@ -98,7 +92,7 @@
 
               </v-row>
             </v-container>
-            <small>*kennzeichnet erforderliche Felder</small>
+            <!-- <small>*kennzeichnet erforderliche Felder</small> -->
           </v-card-text>
 
           <v-card-actions>
@@ -110,21 +104,22 @@
             @click="dialog = false">
               Close
             </v-btn>
-          <v-spacer></v-spacer>
+            <v-spacer></v-spacer>
             <v-btn 
             :disabled="invalid" 
             dark
             class="blue darken" 
             @click="dialog = false" 
-            @submit.prevent="onSubmit"> Save </v-btn>
+            @submit.prevent="onSubmit"
+            :href="'mailto:' + sendToMail + '?subject=' + form.subject + '&body=' + greeting + form.message + '%0D%0A'+'%0D%0A' + regards + '%0D%0A' + form.firstname + ' ' + form.lastname"
+            > Save </v-btn>
             <v-spacer></v-spacer>
           </v-card-actions>
         </v-card>
-         </form>
-      </ValidationObserver>
+      </form>
+    </ValidationObserver>
   </v-dialog>
-</div>
-  </template>
+</template>
 
 
 <script>
@@ -136,7 +131,13 @@ export default {
         lastname: '',
         subject: '',
         message: '',
-    }
+    },
+    sendToMail: 'thomassindlinger1@gmail.com',
+    serviceID: 'service_o0cr2xm',
+    templateID: 'template_q7ytghg',
+    userID: 'user_VGQM4dJPV57Heymmcui95',
+    regards: 'Mit freundlichen Grüßen / Kind Regards',
+    greeting: 'Hallo DataWork-Team, %0D%0A %0D%0A'
   }),
   methods: {
     onSubmit () {

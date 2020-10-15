@@ -9,15 +9,13 @@
         text
         rounded
         class="my-2 font-weight-light"
-        :to="link.route"
-      >
-        {{ link.name }}</v-btn
-      >
+        :to="link.route">{{ link.name }}</v-btn>
 
       <v-col class="text-center" dark cols="12">
-        {{ new Date().getFullYear() }} —
-        <strong>DataWork IT Solutions </strong>
+        <v-divider></v-divider>
+        {{ new Date().getFullYear() }} — 
         <v-icon small>mdi-copyright</v-icon>
+        <strong>DataWork IT Solutions</strong>
       </v-col>
     </v-row>
   </v-footer>

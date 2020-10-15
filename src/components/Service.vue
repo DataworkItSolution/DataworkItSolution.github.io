@@ -62,7 +62,7 @@
           large
           elevation="4"
           dark
-          class="blue animate__animated animate__bounceIn animate__repeat-3">
+          class="blue">
           <v-icon left small>mdi-information</v-icon>
           <span>WebService</span>
         </v-btn>
@@ -84,7 +84,6 @@ p {
   font-size: 20px;
 }
 div {
- 
   font-family: "Raleway", sans-serif;
 }
 </style>
