@@ -2,6 +2,9 @@
   <v-app-bar v-if="this.$route.name == 'Home'" app dark>
     <!-- <v-app-bar-nav-icon> </v-app-bar-nav-icon> -->
 
+    <v-img @click="$vuetify.goTo('#landing')" max-height="75px" max-width="75px" src="../assets/Logo_grau.png" alt="WebTrack-Logo"/>
+    
+
     <v-btn text @click="$vuetify.goTo('#landing')">
       <span class="font-weight-bold">Data</span>
       <span class="font-weight-light">Work</span>
