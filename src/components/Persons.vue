@@ -1,13 +1,8 @@
 <template>
-  <v-container fluid id="team" class="sizeBackground grey lighten-4">
+  <v-container fluid id="team">
     <h1 class="blue--text font-weight-bold pt-1">Gründer und Team</h1>
-    <v-row wrap class="pb-5 pt-5" align="center" no-gutters>
-        <v-col v-for="leader in leaders" :key="leader.name" cols="12"
-          xs="12"
-          sm="6"
-          md="3"
-          lg="3"
-          xl="3"
+    <v-row class="pb-5 pt-5"   v-bind:class="{sizeBackground: sizing }" no-gutters >
+        <v-col v-for="leader in leaders" :key="leader.name" 
           class="pa-1">
           <v-hover close-delay="200" v-slot:default="{ hover }"
             ><v-card
@@ -103,9 +98,14 @@ export default {
     getImg(path) {
       return require(path);
     },
-  },
-  methods: {},
+    sizing(){
+      switch (this.$vuetify.breakpoint.name) {
+        case 'xl': return true;
+    }
+  }}
 };
+ 
+
 </script>
 
 <style scoped lang="scss">
@@ -113,10 +113,15 @@ h1 {
   text-align: center;
 }
 
-// .sizeBackground{
-//  width: 100vw;
-//   height: 100vh;
-// }
+.sizeBackground{
+  width: 100vw;
+  height: 95vh;
+  align-content: center;
+}
+
+.rowAlign{
+  align-content: center;
+}
 
 div {
   font-family: "Raleway", sans-serif;
