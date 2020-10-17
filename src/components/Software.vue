@@ -17,7 +17,7 @@
     </v-col>
 
     <!-- //Content (9/12) -->
-    <v-col  cols="12"
+    <!-- <v-col  cols="12"
           xs="12"
           sm="12"
           md="9"
@@ -51,7 +51,40 @@
           >
         </p>
           
+    </v-col> -->
+
+        <v-col 
+    cols="12" 
+          xs="12"
+          sm="12"
+          md="9"
+          lg="9"
+          xl="9"
+          class="pa-1">
+          <p class="pt-5">
+          <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi! <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ullam! <br />
+          </span>
+          <span>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br /><br />
+          </span>
+          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!</span>
+          <span class="font-weight-bold"> WebService <br /><br /></span>
+          <span
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi! <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br />
+          </span>
+          <span
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br
+          /></span>
+          <span
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!</span
+          >
+        </p>
+          
     </v-col>
+
 
     <!-- //Button (2/12) -->
     <v-col
