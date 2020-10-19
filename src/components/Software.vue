@@ -1,112 +1,31 @@
 <template>
   <v-container fluid id="product" class="grey lighten-3 blue--text">
-  
+
+    <v-row class="text-center">
+      <v-col>
         <h1 class="pt-16">WebTrack</h1>
+      </v-col>
+    </v-row>
 
+    <v-row class="text-center" v-for="item in 4" :key="item" >
+      <v-col>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Voluptate odit quibusdam aut ut itaque vitae unde, architecto distinctio magnam, 
+          voluptatibus amet pariatur doloribus incidunt nisi 
+          minima libero perspiciatis totam mollitia?
+        </div>
+      </v-col>
+    </v-row>
   
-  <v-row wrap align="center" no-gutters>
-    <!-- //Left Space (1/12) -->
-    <v-col 
-          xs="12"
-          sm="12"
-          md="1"
-          lg="1"
-          xl="1"
-          class="pa-1">
-          
-    </v-col>
-
-    <!-- //Content (9/12) -->
-    <!-- <v-col  cols="12"
-          xs="12"
-          sm="12"
-          md="9"
-          lg="9"
-          xl="9"
-          class="pa-1">
-          <p class="pt-5">
-          <span>
-            Kommunikation ist ein häufiger Gegner von fehlerfreien
-            Prozessketten. <br />Deshalb schaffen wir Kundenbindung durch
-            Klarheit und Durchsicht. <br />
-          </span>
-          <span>
-            Wir bieten ein Werkzeug, welches die Kommunikation auf eine neue
-            Ebene bringt.<br /><br />
-          </span>
-          <span>Dieses Werkzeug nennt sich</span>
-          <span class="font-weight-bold"> WebTrack <br /><br /></span>
-          <span
-            >WebTrack bietet Ihnen die Möglichkeit, Ihren Kunden, <br />
-            den Status einer Bestellung in Echtzeit wiederzugeben.<br />
-          </span>
-          <span
-            >Durch intuitive Bedienung einer Benutzeroberfläche kann<br />
-            WebTrack einfach und schnell in den Bestellvorgang integriert
-            werden.<br
-          /></span>
-          <span
-            >Sie sind genauso begeistert wie wir, dann erfahren Sie hier mehr
-            davon.</span
-          >
-        </p>
-          
-    </v-col> -->
-
-        <v-col 
-    cols="12" 
-          xs="12"
-          sm="12"
-          md="9"
-          lg="9"
-          xl="9"
-          class="pa-1">
-          <p class="pt-5">
-          <span>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi! <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ullam! <br />
-          </span>
-          <span>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br /><br />
-          </span>
-          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!</span>
-          <span class="font-weight-bold"> WebService <br /><br /></span>
-          <span
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi! <br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br />
-          </span>
-          <span
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br
-          /></span>
-          <span
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!</span
-          >
-        </p>
-          
-    </v-col>
-
-
-    <!-- //Button (2/12) -->
-    <v-col
-          xs="12"
-          sm="12"
-          md="2"
-          lg="2"
-          xl="2"
-          class="pa-1"
-          align="start"
-          justify="center">
-        <v-btn
-          large
-          elevation="4"
-          dark
-          class="blue">
-          <v-icon left small>mdi-omega</v-icon>
-          <span>WebTrack</span>
+    <v-row class="text-center">
+      <v-col>
+        <v-btn  class="blue--text white">
+          <v-icon small>mdi-omega</v-icon>
+          WebTrack
         </v-btn>
-          
-    </v-col>
-  </v-row>
+      </v-col>
+    </v-row>
+  
   </v-container>
 </template>
 

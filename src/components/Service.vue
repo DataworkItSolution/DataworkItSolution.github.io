@@ -1,74 +1,31 @@
 <template>
   <v-container fluid id="service" class="blue--text">
   
-  <h1 class="pt-16">WebService</h1>
-  
-  <v-row wrap align="center" no-gutters>
-    <!-- //Left Space (1/12) -->
-    <v-col cols="12"
-          xs="12"
-          sm="12"
-          md="1"
-          lg="1"
-          xl="1"
-          class="pa-1">
-          
-    </v-col>
+    <v-row class="text-center">
+      <v-col>
+        <h1 class="pt-16">WebService</h1>
+      </v-col>
+    </v-row>
 
-    <!-- //Content (9/12) -->
-    <v-col 
-    cols="12" 
-          xs="12"
-          sm="12"
-          md="9"
-          lg="9"
-          xl="9"
-          class="pa-1">
-          <p class="pt-5">
-          <span>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi! <br />Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, ullam! <br />
-          </span>
-          <span>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br /><br />
-          </span>
-          <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!</span>
-          <span class="font-weight-bold"> WebService <br /><br /></span>
-          <span
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi! <br />
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br />
-          </span>
-          <span
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br />
-           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!<br
-          /></span>
-          <span
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui, animi!</span
-          >
-        </p>
-          
-    </v-col>
+    <v-row class="text-center" v-for="item in 4" :key="item" >
+      <v-col>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Voluptate odit quibusdam aut ut itaque vitae unde, architecto distinctio magnam, 
+          voluptatibus amet pariatur doloribus incidunt nisi 
+          minima libero perspiciatis totam mollitia?
+        </div>
+      </v-col>
+    </v-row>
 
-    <!-- //Button (2/12) -->
-    <v-col cols="12"
-          xs="12"
-          sm="12"
-          md="2"
-          lg="2"
-          xl="2"
-          class="pa-1"
-          align="start"
-          justify="center">
-        <v-btn
-          large
-          elevation="4"
-          dark
-          class="blue">
-          <v-icon left small>mdi-information</v-icon>
-          <span>WebService</span>
+    <v-row class="text-center">
+      <v-col>
+        <v-btn  class="blue--text white">
+          <v-icon small>mdi-information</v-icon>
+          WebService
         </v-btn>
-          
-    </v-col>
-  </v-row>
+      </v-col>
+    </v-row>
+  
   </v-container>
 </template>
 
